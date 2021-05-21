@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leagues</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>England Football</h1>
+    <br>
+    <div class="container">
+        <ul class="list-group">
+            {% for i in range(0,names|length-17) %}
+                <li class="list-group-item"><a href="{{ url_for('dis_fix', name = names[i], logo = logos[i]) }}"><img src="{{ logos[i] }}" alt="" height="64" width="64"><label class="font-weight-bold" for="" style="font-size: large; ">  {{ names[i] }}</label></a></li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+</body>
+</html>

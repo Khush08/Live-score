@@ -1,0 +1,98 @@
+.container{
+    padding-top: 4em;
+}
+#myUl{
+    margin-top: 0.5em;
+}
+.wrapper{
+
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    border-collapse: collapse;
+    /*border: 1px #455a64 solid;*/
+    border-radius: 1em;
+    
+}
+
+.box1, .box2, .box3{
+    background-color: #fafafa ;
+    color: black;
+    padding: 0.1em;
+    padding-left: 0.5em;
+    padding-right: 0.2em;
+}
+
+.box1{
+    grid-column: 1/5;
+    grid-row: 1/2;
+    border-top-left-radius: 1em;
+}
+
+.box2{
+    grid-column: 1/5;
+    grid-row: 2/3;
+    /*border-bottom: 1px #455a64 solid;*/
+}
+
+.box3{
+    grid-column: 5/9;
+    grid-row: 1/3;
+    text-align: right;
+    float: center;
+    /*border-bottom: 1px #455a64 solid;*/
+    border-top-right-radius: 1em;
+    padding-top: 1em;
+    
+}
+
+.box4{
+    padding: 1em;
+    grid-column: 1/5;
+    grid-row: 3/6;
+}
+
+.box4 img{
+    float: left;
+    width: 64;
+    height: 64;
+}
+
+.box4 h3{
+    float: left;
+}
+
+.box5{
+    padding: 1em;
+    grid-column: 5/9;
+    grid-row: 3/6;
+}
+
+.box5 img{
+    float: right;
+    width: 64;
+    height: 64;
+}
+
+.box5 h3{
+    float: right;
+}
+
+.box6{
+    padding: 1em;
+    padding-bottom: 0.4em;
+    grid-column: 4/6;
+    grid-row: 3/4;
+    text-align: center;
+    color: #4a148c;
+    font-weight: bold;
+}
+
+.box7{
+    grid-column: 4/6;
+    grid-row: 4/5;
+    text-align: center;
+    color: #4a148c;
+    font-weight: bold;
+}

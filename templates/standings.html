@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<script src="{{ url_for('static', filename = 'standing.js')}}"></script>
+<div class="container">
+    <table id="myTable" class="table table-hover">
+        <thead>
+            <tr>
+                <th>CLUB</th>
+                <th></th>
+                <th></th>
+                <th>PLAYED</th>
+                <th>WON</th>
+                <th>DRAW</th>
+                <th>LOSS</th>
+                <th>POINTS</th>
+                <th>EUROPE</th>         
+            </tr>
+        </thead>
+    </table>
+</div>
+
+{% endblock %}
